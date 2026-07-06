@@ -1,0 +1,14 @@
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\bin\Debug\net10.0\zadanie_2.exe
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\bin\Debug\net10.0\zadanie_2.deps.json
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\bin\Debug\net10.0\zadanie_2.runtimeconfig.json
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\bin\Debug\net10.0\zadanie_2.dll
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\bin\Debug\net10.0\zadanie_2.pdb
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\zadanie_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\zadanie_2.AssemblyInfoInputs.cache
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\zadanie_2.AssemblyInfo.cs
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\zadanie_2.csproj.CoreCompileInputs.cache
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\zadanie_2.dll
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\refint\zadanie_2.dll
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\zadanie_2.pdb
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\zadanie_2.genruntimeconfig.cache
+C:\Praktika_NORBIT\zadanie_2\zadanie_2\obj\Debug\net10.0\ref\zadanie_2.dll
