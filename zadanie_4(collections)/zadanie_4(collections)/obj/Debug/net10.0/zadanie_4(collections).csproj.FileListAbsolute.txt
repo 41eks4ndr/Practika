@@ -1,0 +1,14 @@
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\bin\Debug\net10.0\zadanie_4(collections).exe
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\bin\Debug\net10.0\zadanie_4(collections).deps.json
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\bin\Debug\net10.0\zadanie_4(collections).runtimeconfig.json
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\bin\Debug\net10.0\zadanie_4(collections).dll
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\bin\Debug\net10.0\zadanie_4(collections).pdb
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\zadanie_4(collections).GeneratedMSBuildEditorConfig.editorconfig
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\zadanie_4(collections).AssemblyInfoInputs.cache
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\zadanie_4(collections).AssemblyInfo.cs
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\zadanie_4(collections).csproj.CoreCompileInputs.cache
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\zadanie_4(collections).dll
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\refint\zadanie_4(collections).dll
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\zadanie_4(collections).pdb
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\zadanie_4(collections).genruntimeconfig.cache
+C:\Praktika_NORBIT\zadanie_4(collections)\zadanie_4(collections)\obj\Debug\net10.0\ref\zadanie_4(collections).dll
