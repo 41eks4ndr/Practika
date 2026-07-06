@@ -1,0 +1,87 @@
+﻿using System;
+using System.Linq;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
+namespace BoardGameApp
+{
+    public class Publisher
+    {
+        public int PublisherID { get; set; }
+        public string Name { get; set; }
+        public string ContactEmail { get; set; }
+    }
+
+    public class BoardGameContext : DbContext
+    {
+        private readonly string _connString;
+        public BoardGameContext(string connString) => _connString = connString;
+        public DbSet<Publisher> Publishers { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+            => options.UseSqlServer(_connString);
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var config = new ConfigurationBuilder()
+                .SetBasePath(AppContext.BaseDirectory)
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            string connString = config.GetConnectionString("DefaultConnection");
+
+            Console.WriteLine("=== BoardGamesClub CLI ===");
+            Console.WriteLine("1 - ADO.NET, 2 - EF Core");
+            var tech = Console.ReadLine();
+            Console.WriteLine("1-Создать, 2-Показать все");
+            var action = Console.ReadLine();
+
+            if (tech == "1") RunAdoNet(connString, action);
+            else RunEF(connString, action);
+        }
+
+        static void RunAdoNet(string connString, string action)
+        {
+            using var conn = new SqlConnection(connString);
+            conn.Open();
+
+            if (action == "1")
+            {
+                Console.Write("Имя: "); string n = Console.ReadLine();
+                Console.Write("Email: "); string e = Console.ReadLine();
+                var cmd = new SqlCommand("INSERT INTO Publishers (Name, ContactEmail) VALUES (@n, @e)", conn);
+                cmd.Parameters.AddWithValue("@n", n);
+                cmd.Parameters.AddWithValue("@e", e);
+                cmd.ExecuteNonQuery();
+            }
+            else
+            {
+                var cmd = new SqlCommand("SELECT PublisherID, Name, ContactEmail FROM Publishers", conn);
+                using var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                    Console.WriteLine($"{reader["PublisherID"]} | {reader["Name"]} | {reader["ContactEmail"]}");
+            }
+        }
+
+        static void RunEF(string connString, string action)
+        {
+            using var db = new BoardGameContext(connString);
+            if (action == "1")
+            {
+                Console.Write("Имя: "); string n = Console.ReadLine();
+                db.Publishers.Add(new Publisher { Name = n, ContactEmail = "test@mail.ru" });
+                db.SaveChanges();
+            }
+            else
+            {
+                var list = db.Publishers.ToList();
+                foreach (var p in list)
+                    Console.WriteLine($"{p.PublisherID} | {p.Name} | {p.ContactEmail}");
+            }
+        }
+    }
+}
